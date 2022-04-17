@@ -135,7 +135,7 @@ background-color:#2D9CDB;
      <rect>
       <x>60</x>
       <y>100</y>
-      <width>551</width>
+      <width>731</width>
       <height>111</height>
      </rect>
     </property>
@@ -161,7 +161,7 @@ color: #006EAC;</string>
      <rect>
       <x>60</x>
       <y>250</y>
-      <width>241</width>
+      <width>731</width>
       <height>31</height>
      </rect>
     </property>
@@ -205,9 +205,9 @@ color: #2D9CDB;</string>
    <widget class="QLabel" name="label_4">
     <property name="geometry">
      <rect>
-      <x>760</x>
+      <x>620</x>
       <y>10</y>
-      <width>91</width>
+      <width>231</width>
       <height>20</height>
      </rect>
     </property>

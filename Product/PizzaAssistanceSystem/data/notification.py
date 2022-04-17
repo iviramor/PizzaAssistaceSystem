@@ -37,3 +37,20 @@ class MessBoxClass(QWidget, formMessBox):
 
 	def setMode(self):
 		self.setWindowModality(Qt.ApplicationModal)
+
+class MessBox1CClass(QWidget, formMessBox):
+	'''Окно оповещения'''
+
+	def __init__(self):
+		QWidget.__init__(self, None)
+		self.setupUi(self)
+		self.label.setText("Произведен экспорт в 1С!")
+		self.setWindowTitle('Успех!')
+		self.setMode()
+		self.closing()
+
+	def closing(self):
+		self.okButton.clicked.connect(self.close)
+
+	def setMode(self):
+		self.setWindowModality(Qt.ApplicationModal)

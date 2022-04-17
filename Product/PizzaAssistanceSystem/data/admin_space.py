@@ -638,6 +638,7 @@ class AnalWindow():
 	def __clBut(self):
 		self.obj.updButton.clicked.connect(self.updateStat)
 		self.obj.expButton.clicked.connect(self.__expToEX)
+		self.obj.expButtonTo1C.clicked.connect(self.__ExpToOneC)
 		self.obj.workerBoxAnal.activated.connect(self.setWork)
 
 	def updateStat(self):
@@ -708,6 +709,10 @@ class AnalWindow():
 	def __expToEX(self):
 		self.excel.createXlsx()
 
+	def __ExpToOneC(self):
+		self.inf = MessBox1CClass()
+		self.inf.show()
+
 class Excel():
 
 	def __init__(self, obj, idWorker):
@@ -717,15 +722,15 @@ class Excel():
 	def createXlsx(self):
 		data = str(datetime.datetime.now())
 		data = data.replace(':', '-')
-		data = '../Отчеты/' + data + '.xlsx'
-		self.workbook = xlsxwriter.Workbook(data)
+		self.data = '../Отчеты/' + data + '.xlsx'
+		self.workbook = xlsxwriter.Workbook(self.data)
 		self.worksheet = self.workbook.add_worksheet()
 		self.__setDataExel()
 		self.__showMB()
 
 	def __showMB(self):
 		self.mbsn = MessBoxClass()
-		self.mbsn.label.setText('Экспортирован в папку "Отчеты"')
+		self.mbsn.label.setText(f'Экспортирован в папку "Отчеты"\n {self.data}')
 		self.mbsn.show()
 
 	def __setDataExel(self):

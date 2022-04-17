@@ -163,7 +163,7 @@ color: #FFFFFF;</string>
       <rect>
        <x>30</x>
        <y>102</y>
-       <width>41</width>
+       <width>241</width>
        <height>21</height>
       </rect>
      </property>
@@ -186,8 +186,8 @@ color: #FFFFFF;</string>
       <rect>
        <x>30</x>
        <y>166</y>
-       <width>43</width>
-       <height>14</height>
+       <width>241</width>
+       <height>16</height>
       </rect>
      </property>
      <property name="font">

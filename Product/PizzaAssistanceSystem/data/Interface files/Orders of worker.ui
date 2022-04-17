@@ -368,7 +368,7 @@ background-color: #fff;</string>
        <rect>
         <x>1130</x>
         <y>0</y>
-        <width>131</width>
+        <width>135</width>
         <height>521</height>
        </rect>
       </property>
@@ -419,9 +419,9 @@ color: #fff;
        <property name="geometry">
         <rect>
          <x>10</x>
-         <y>70</y>
+         <y>120</y>
          <width>111</width>
-         <height>31</height>
+         <height>81</height>
         </rect>
        </property>
        <property name="font">
@@ -452,7 +452,7 @@ background:  #F5BE2E;
          <x>10</x>
          <y>30</y>
          <width>111</width>
-         <height>31</height>
+         <height>81</height>
         </rect>
        </property>
        <property name="font">
@@ -655,7 +655,7 @@ box-sizing: border-box;</string>
          <x>10</x>
          <y>30</y>
          <width>111</width>
-         <height>31</height>
+         <height>81</height>
         </rect>
        </property>
        <property name="font">
@@ -684,9 +684,9 @@ background:  #2D9CDB;
        <property name="geometry">
         <rect>
          <x>10</x>
-         <y>70</y>
+         <y>120</y>
          <width>111</width>
-         <height>31</height>
+         <height>81</height>
         </rect>
        </property>
        <property name="font">
